@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Navigation;
+    src: url(fonts/Navigation.ttf);
+}
+
+@font-face {
+    font-family: Source;
+    src: url(fonts/fontick.otf);
+}
+h1 {
+    font-size: 100px;
+}
+nav {
+    background: #2C2F33;
+    display:  inline;
+    margin: auto;
+}
+
+body,
+ul.nav {
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav {
+    display: flex;
+}
+
+body
+{
+    background-color: #2C2F33;
+}
+ul.nav li {
+    font-family: Navigation;
+    list-style-type: none;
+    flex-basis: auto;
+    flex-grow: 1;
+    background: #7289DA;
+    text-align: center;
+}
+ul.nav li a {
+    padding: 20px 0;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+}
+
+section {
+    color: #FFFFFF;
+    list-style-type: none;
+    font-family: Source;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    color: #FFFFFF;
+    padding-top: 100px;
+}
+section.graph {
+    font-family: Source;
+
+}
