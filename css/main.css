@@ -26,6 +26,25 @@ ul.nav {
     display: flex;
 }
 
+section#home img{
+    -webkit-filter: drop-shadow(0px 0px 45px rgba(0, 13, 255, 0.4));
+    filter: drop-shadow(0px 0px 45px rgba(0, 13, 255, 0.4));
+}
+section#about img{
+    -webkit-box-shadow: 0px 0px 45px 0px rgba(0, 13, 255, 0.4);
+    -moz-box-shadow: 0px 0px 45px 0px rgba(0, 13, 255, 0.4);
+    box-shadow: 0px 0px 45px 0px rgba(0, 13, 255, 0.4);
+}
+section#tournaments h2{
+    text-decoration: underline;
+}
+section#tournaments ul span{
+    background: rgba(255, 255, 0, 1);
+    text-transform: uppercase;
+}
+section#about aside {
+    padding-top: 20px;
+}
 body
 {
     background-color: #2C2F33;
@@ -34,6 +53,7 @@ ul.nav li {
     font-family: Navigation;
     list-style-type: none;
     flex-basis: auto;
+    font-weight: bolder;
     flex-grow: 1;
     background: #7289DA;
     text-align: center;
