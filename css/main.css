@@ -7,9 +7,6 @@
     font-family: Source;
     src: url(fonts/fontick.otf);
 }
-h1 {
-    font-size: 100px;
-}
 nav {
     background: #2C2F33;
     display:  inline;
@@ -20,12 +17,31 @@ body,
 ul.nav {
     margin: 0;
     padding: 0;
+    hyphens: auto;
 }
 
 ul.nav {
     display: flex;
 }
 
+main {
+    position: relative;
+}
+
+section#home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+
+div#main_information{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
 section#home img{
     -webkit-filter: drop-shadow(0px 0px 45px rgba(0, 13, 255, 0.4));
     filter: drop-shadow(0px 0px 45px rgba(0, 13, 255, 0.4));
@@ -41,6 +57,19 @@ section#tournaments h2{
 section#tournaments ul span{
     background: rgba(255, 255, 0, 1);
     text-transform: uppercase;
+}
+
+div#images{
+    flex-direction: row;
+}
+
+div#images img{
+    width: 30%;
+    height: auto;
+}
+
+div#about_text{
+    padding: 2%;
 }
 section#about aside {
     padding-top: 20px;
@@ -58,6 +87,7 @@ ul.nav li {
     background: #7289DA;
     text-align: center;
 }
+
 ul.nav li a {
     padding: 20px 0;
     text-decoration: none;
@@ -79,7 +109,11 @@ footer {
     color: #FFFFFF;
     padding-top: 100px;
 }
+
 section.graph {
     font-family: Source;
 
+}
+section#contacs{
+    position: absolute;
 }
