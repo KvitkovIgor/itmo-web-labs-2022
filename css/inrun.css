@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Navigation;
+    src: url(fonts/Navigation.ttf);
+}
+
+@font-face {
+    font-family: Source;
+    src: url(fonts/fontick.otf);
+}
+
+nav {
+    background: #2C2F33;
+    display:  inline;
+    margin: auto;
+}
+
+body,
+ul.nav {
+    margin: 0;
+    padding: 0;
+    hyphens: auto;
+}
+
+ul.nav {
+    display: flex;
+}
+
+body
+{
+    background-color: #2C2F33;
+}
+ul.nav li {
+    font-family: Navigation;
+    list-style-type: none;
+    flex-basis: auto;
+    font-weight: bolder;
+    flex-grow: 1;
+    background: #7289DA;
+    text-align: center;
+}
+ul.nav li a {
+    padding: 20px 0;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+}
+
+section {
+    color: #FFFFFF;
+    list-style-type: none;
+    font-family: Source;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    position: absolute;
+    top: 300px;
+    right: 0;
+    max-width: 150px;
+    max-height: 200px;
+}
+table {
+    border: 3px solid white;
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    font-family: Source;
+    color: #FFFFFF;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid white;
+    font-size: 150%;
+}
+
+th {
+    background: #7289DA;
+}
+td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+tr:nth-child(2n) {
+    background: #535559;
+}
+
+tr:nth-child(2n + 1) {
+    background: #878788;
+}
+
+tr td:hover {
+    background: #c4c4c4;
+}
+
+main {
+    min-height: calc(100vh - 70px);
+    ;
+}
+
+
+form {
+    padding-top: 5%;
+    margin: auto;
+    text-align: center;
+    font-family: Source;
+    color: #FFFFFF;
+    border-collapse: collapse;
+}
+
+button{
+    font-family: Source;
+    background: #7289DA;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #FFFFFF; /* Green */
+    color: #7289DA;
+}
+
+footer {
+    height: 70px;
+    background: #535559;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+ul.nav li a.active{
+    color:  rgb(0, 29, 73);
+    text-decoration: none;
+
+}
+
+ul.nav li a:hover{
+    color: rgb(0, 13, 255);
+}
+
+div#footnote {
+    margin: 0 auto;
+}
+
+
+@media screen and (min-device-width: 100px) and (max-device-width: 400px) {
+    img{
+        opacity: 0;
+    }
+}
