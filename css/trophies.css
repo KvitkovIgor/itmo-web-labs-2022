@@ -29,6 +29,7 @@ body
 {
     background-color: #2C2F33;
 }
+
 ul.nav li {
     font-family: Navigation;
     list-style-type: none;
@@ -45,60 +46,29 @@ ul.nav li a {
     display: block;
 }
 
+
 section {
     color: #FFFFFF;
     list-style-type: none;
     font-family: Source;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+    align-content: center;
+}
+
+ul.nav li a.active{
+    color:  rgb(0, 29, 73);
+    text-decoration: none;
+
+}
+
+ul.nav li a:hover{
+    color: rgb(0, 13, 255);
 }
 
 ul {
     list-style-type: none;
-}
-
-section.wrapper {
-    padding-top: 100px;
-}
-
-img {
-    position: absolute;
-    top: 300px;
-    right: 0;
-    max-width: 150px;
-    max-height: 200px;
-}
-table {
-    border: 3px solid white;
-    margin: auto;
-    width: 40%;
-    text-align: center;
-    font-family: Source;
-    color: #FFFFFF;
-    border-collapse: collapse;
-}
-th {
-    border: 1px solid white;
-    font-size: 150%;
-}
-
-
-th {
-    background: #7289DA;
-}
-td {
-    border: 1px solid white;
-    padding: 10px;
-}
-
-tr:nth-child(2n) {
-    background: #535559;
-}
-
-tr:nth-child(2n + 1) {
-    background: #878788;
-}
-
-tr td:hover {
-    background: #c4c4c4;
 }
 
 main {
@@ -114,23 +84,7 @@ footer {
     display: flex;
 }
 
-ul.nav li a.active{
-    color:  rgb(0, 29, 73);
-    text-decoration: none;
 
-}
-
-ul.nav li a:hover{
-    color: rgb(0, 13, 255);
-}
-
-div#footnote {
+div.footnote {
     margin: 0 auto;
-}
-
-
-@media screen and (min-device-width: 100px) and (max-device-width: 400px) {
-    img{
-        opacity: 0;
-    }
 }

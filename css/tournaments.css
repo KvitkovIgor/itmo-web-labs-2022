@@ -46,72 +46,43 @@ ul.nav li a {
 }
 
 section {
+    padding-top: 100px;
     color: #FFFFFF;
     list-style-type: none;
     font-family: Source;
+    text-align: center;
+    margin: auto;
 }
 
 ul {
     list-style-type: none;
 }
 
-section.wrapper {
-    padding-top: 100px;
+section#tournaments img{
+    -webkit-box-shadow: 0px 0px 45px 0px rgba(0, 13, 255, 0.4);
+    -moz-box-shadow: 0px 0px 45px 0px rgba(0, 13, 255, 0.4);
+    box-shadow: 0px 0px 45px 0px rgba(0, 13, 255, 0.4);
 }
 
-img {
-    position: absolute;
-    top: 300px;
-    right: 0;
-    max-width: 150px;
-    max-height: 200px;
-}
-table {
-    border: 3px solid white;
-    margin: auto;
-    width: 40%;
-    text-align: center;
-    font-family: Source;
-    color: #FFFFFF;
-    border-collapse: collapse;
-}
-th {
-    border: 1px solid white;
-    font-size: 150%;
+div#images{
+    flex-direction: row;
 }
 
-
-th {
-    background: #7289DA;
-}
-td {
-    border: 1px solid white;
-    padding: 10px;
+div#images img{
+    width: 30%;
+    height: auto;
 }
 
-tr:nth-child(2n) {
-    background: #535559;
+section h1{
+    text-decoration: underline;
 }
-
-tr:nth-child(2n + 1) {
-    background: #878788;
-}
-
-tr td:hover {
-    background: #c4c4c4;
+section ul span{
+    background: rgba(255, 255, 0, 0.5);
+    text-transform: uppercase;
 }
 
 main {
     min-height: calc(100vh - 70px);
-}
-
-footer {
-    height: 70px;
-    background: #535559;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-    display: flex;
 }
 
 ul.nav li a.active{
@@ -124,13 +95,14 @@ ul.nav li a:hover{
     color: rgb(0, 13, 255);
 }
 
+footer {
+    height: 70px;
+    background: #535559;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
 div#footnote {
     margin: 0 auto;
-}
-
-
-@media screen and (min-device-width: 100px) and (max-device-width: 400px) {
-    img{
-        opacity: 0;
-    }
 }
