@@ -5,15 +5,18 @@
     <title>S1MPLE</title>
     <link rel="stylesheet" href="css/main.css">
     <meta name="keywords" content="players stats, cs:go, html">
+    <script src="js/all_html.js"></script>
+    <script src="js/timer.js"></script>
+    <script res="script" src="js/menu.js"></script>
 </head>
 <body>
-<header>
+<header id="header">
     <nav>
         <ul class="nav">
-            <li><a href="#home">ABOUT HIM</a></li>
-            <li><a href="#about">TROPHIES</a></li>
-            <li><a href="#tournaments">TOURNAMENTS</a></li>
-            <li><a href="html/table.html">TABLE STATS</a></li>
+            <li><a href="index.html" class="menu">ABOUT HIM</a></li>
+            <li><a href="html/trophies.html" class="menu">TROPHIES</a></li>
+            <li><a href="html/tournaments.html" class="menu">TOURNAMENTS</a></li>
+            <li><a href="html/table.html" class="menu">TABLE STATS</a></li>
         </ul>
     </nav>
 </header>
@@ -24,17 +27,6 @@
     </section>
     <div id="main_information">
     <section id="about">
-        <h1>About him</h1>
-        <div id="images">
-            <img src="img/90932_oLLy.jpg" alt="Photo">
-            <img src="img/2461594-640x360.jpg" alt="Photo">
-            <img src="img/scale_1200.png" alt="Photo">
-        </div>
-        <ul>
-            <li><span>TOP 20 HLTV:</span> top 1 2018, top 2 2019, top 1 2020</li>
-            <li><span>Main victories:</span> ESL KATOWICE 2020, INTEL GRANDSLAM</li>
-            <li><span>OTHER ACHIEVEMENTS:</span> Sushi, Twitch and Media giant</li>
-        </ul>
         <h2>INFORMATION ABOUT PLAYER</h2>
         <div id="about_text">
             <span>Oleksandr "s1mple" Kostyliev (born October 2, 1997) is a Ukrainian professional Counter-Strike: Global Offensive player who plays for Natus Vincere as the AWPer. He is widely considered as the greatest player in CS:GO history</span>
@@ -54,25 +46,13 @@
             <span>Na'Vi went into the PGL Major as the heavy favourites after placing first in their regional ranking tournament, reverse sweeping Gambit in the process. After going undefeated in the Legends stage of the Stockholm Major, Na'Vi proceeded to the playoffs, eliminating home favorites NiP in the process.Na'Vi retained their form and won the Major, making history by going undefeated throughout the tournament.</span>
         </div>
     </section>
-    <section id="tournaments">
-        <h2>All big victories</h2>
-        <ul>
-            <li><span>2021-09-12	1st	Misc.	Offline/Online		Intel Grand Slam Season 3	Natus Vincere	4/4/0	Grp. S.	$1,000,000</span></li>
-            <li><span>2021-01-24	1st	S-Tier	Online		BLAST Premier: Global Final 2020	Natus Vincere	2 : 0	Astralis	$600,000</span></li>
-            <li><span>2021-07-18	1st	S-Tier	Offline		Intel Extreme Masters XVI - Cologne	Natus Vincere	3 : 0	G2 Esports	$400,000</span></li>
-            <li><span>2020-03-01	1st	S-Tier	Offline		Intel Extreme Masters XIV - World Championship	Natus Vincere	3 : 0	G2 Esports	$250,000</span></li>
-            <li><span>2019-04-07	1st	S-Tier	Offline		StarSeries & i-League CS:GO Season 7	Natus Vincere	3 : 0	Fnatic	$250,000</span></li>
-            <li><span>2021-09-12	1st	S-Tier	Online		ESL Pro League Season 14	Natus Vincere	3 : 2	Team Vitality	$195,000</span></li>
-        </ul>
-    </section>
-    <section id="contacs">
-    </section>
     </div>
 </main>
-<footer>
-    <div class="footnote">
-        <p>Kvitkov Igor Designed <span class="highlight">©2021</span></p>
-    </div>
-</footer>
+    <footer>
+        <div id="footnote">
+            <p id="load"></p>
+            <p id="sign ">Kvitkov Igor Designed <span class="highlight">©2021</span></p>
+        </div>
+    </footer>
 </body>
 </html>
