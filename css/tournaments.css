@@ -30,7 +30,7 @@ body
     background-color: #2C2F33;
 }
 ul.nav li {
-    font-family: Navigation;
+    font-family: Navigation, "Times New Roman";
     list-style-type: none;
     flex-basis: auto;
     font-weight: bolder;
@@ -65,7 +65,10 @@ section#tournaments img{
 }
 
 div#images{
-    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 div#images img{
@@ -88,7 +91,13 @@ main {
 ul.nav li a.active{
     color:  rgb(0, 29, 73);
     text-decoration: none;
+}
 
+q {
+    line-height: 150%;
+    text-indent: hanging;
+    letter-spacing: -1px;
+    text-decoration-style: solid;
 }
 
 ul.nav li a:hover{
@@ -105,4 +114,16 @@ footer {
 }
 div#footnote {
     margin: 0 auto;
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+    div#images{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 600px)  {
+    div#images{
+        flex-direction: row;
+    }
 }
