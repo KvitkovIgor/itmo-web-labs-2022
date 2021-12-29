@@ -8,6 +8,10 @@
     <script src="../js/all_html.js"></script>
     <script rel="script" src="../js/menu.js"></script>
     <script src="../js/timer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
 <div id="wrapper">
@@ -24,11 +28,18 @@
 </header>
 <main>
     <section id="tournaments">
-        <div id="images">
-            <img src="../img/90932_oLLy.jpg" alt="Photo">
-            <img src="../img/2461594-640x360.jpg" alt="Photo">
-            <img src="../img/scale_1200.png" alt="Photo">
+        <!--            slider-->
+        <div class="main-carousel">
+            <img src="../img/s1mple-png.png" alt="avatar"/>
+            <img src="../img/1.png" alt="first img"/>
+            <img src="../img/2.png" alt="second img"/>
+            <img src="../img/3.png" alt="third img"/>
+            <img src="../img/4.png" alt="fourth img"/>
+            <img src="../img/5.png" alt="fifth img"/>
         </div>
+        <!--            flickity-->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script rel="script" src="../js/slider.js"></script>
         <h1>All big victories</h1>
         <ul>
             <li><span>2021-09-12	1st	Misc.	Offline/Online		Intel Grand Slam Season 3	Natus Vincere	4/4/0	Grp. S.	$1,000,000</span></li>
