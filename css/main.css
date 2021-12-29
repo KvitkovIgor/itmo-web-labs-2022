@@ -58,7 +58,7 @@ body
     background-color: #2C2F33;
 }
 ul.nav li {
-    font-family: Navigation;
+    font-family: Navigation, "Times New Roman";
     list-style-type: none;
     flex-basis: auto;
     font-weight: bolder;
@@ -96,7 +96,7 @@ footer {
 }
 
 ul.nav li {
-    font-family: Navigation;
+    font-family: Navigation, "Times New Roman";
     list-style-type: none;
     flex-basis: auto;
     font-weight: bolder;

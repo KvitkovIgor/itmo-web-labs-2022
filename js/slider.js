@@ -1,6 +1,7 @@
 window.onload = function () {
     let elem = document.querySelector('.main-carousel');
     let flkty = new Flickity(elem, {
+        contain: true,
         cellAlign: 'left', //align cells within the carousel element
         autoplay: 1000, //autoplay
         draggable: false, //disable dragging

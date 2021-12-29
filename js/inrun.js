@@ -45,10 +45,7 @@ window.addEventListener('load', () => {
             return;
         }
         const data = {
-            match: match,
-            map: map,
-            kdr: kdr,
-            rating: rating
+            match, map, kdr, rating
         };
         const serialData = JSON.stringify(data);
         let id = Number(storage.getItem("id"));
@@ -67,6 +64,13 @@ window.addEventListener('load', () => {
         table.replaceChild(tbody, oldChild);
         storage.clear();
     });
+
+    document.getElementById('queue-web').addEventListener('keydown', function(e){
+        if (e.keyCode === 13) {
+            const ev = new Event("submit");
+            document.getElementById("queue-web").dispatchEvent(ev);
+        }
+    })
 });
 
 window.addEventListener('load', () => {
@@ -80,39 +84,24 @@ window.addEventListener('load', () => {
         const storage = window.localStorage;
         const url = 'https://hltv-api.vercel.app/api/players.json';
         e.preventDefault();
-        fetch(url)
-            .then((resp) => resp.json())
-            .then(function(data) {
+        fetch(url).then((resp) => resp.json()).then(function(data) {
                 let element_id = Math.floor(Math.random() * 200);
                 const match = data[element_id].nickname;
                 const map = "Dust 2";
                 const kdr = data[element_id].kd;
                 const rating = data[element_id].rating;
                 const new_stas = {
-                    match: match,
-                    map: map,
-                    kdr: kdr,
-                    rating: rating
+                    match, map, kdr, rating
                 };
 
                 const serialData = JSON.stringify(new_stas);
                 console.log(serialData);
-                let id = Number(storage.getItem("id"));
-                id = id + 1;
+                let id = Number(storage.getItem("id")) + 1;
                 storage.setItem(String(id), serialData);
                 storage.setItem("id", String(id));
-                let newRow = document.getElementById("queue-table").insertRow();
-                let newCell = newRow.insertCell(0)
-                newCell.innerText=new_stas.match;
-                newCell = newRow.insertCell(1)
-                newCell.innerText=new_stas.map;
-                newCell = newRow.insertCell(2)
-                newCell.innerText=new_stas.kdr;
-                newCell = newRow.insertCell(3)
-                newCell.innerText=new_stas.rating;
+                addRow(new_stas);
                 e.target.reset();
-            })
-            .catch(function(error) {
+            }).catch(function(error) {
                 alert("⚠ Что-то пошло не так!");
             })
     });
