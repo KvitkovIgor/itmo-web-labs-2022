@@ -85,24 +85,24 @@ window.addEventListener('load', () => {
         const url = 'https://hltv-api.vercel.app/api/players.json';
         e.preventDefault();
         fetch(url).then((resp) => resp.json()).then(function(data) {
-                let element_id = Math.floor(Math.random() * 200);
-                const match = data[element_id].nickname;
-                const map = "Dust 2";
-                const kdr = data[element_id].kd;
-                const rating = data[element_id].rating;
-                const new_stas = {
-                    match, map, kdr, rating
-                };
+            let element_id = Math.floor(Math.random() * 200);
+            const match = data[element_id].nickname;
+            const map = "Dust 2";
+            const kdr = data[element_id].kd;
+            const rating = data[element_id].rating;
+            const new_stas = {
+                match, map, kdr, rating
+            };
 
-                const serialData = JSON.stringify(new_stas);
-                console.log(serialData);
-                let id = Number(storage.getItem("id")) + 1;
-                storage.setItem(String(id), serialData);
-                storage.setItem("id", String(id));
-                addRow(new_stas);
-                e.target.reset();
-            }).catch(function(error) {
-                alert("⚠ Что-то пошло не так!");
-            })
+            const serialData = JSON.stringify(new_stas);
+            console.log(serialData);
+            let id = Number(storage.getItem("id")) + 1;
+            storage.setItem(String(id), serialData);
+            storage.setItem("id", String(id));
+            addRow(new_stas);
+            e.target.reset();
+        }).catch(function(error) {
+            alert("⚠ Что-то пошло не так!");
+        })
     });
 });

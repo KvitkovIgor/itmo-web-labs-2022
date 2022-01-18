@@ -3,70 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>S1MPLE</title>
+    <script defer src="../js/timer.js"></script>
     <link rel="stylesheet" href="../css/inrun.css">
     <meta name="keywords" content="players stats, cs:go, html">
     <script defer src="../js/all_html.js"></script>
-    <script defer src="../js/timer.js"></script>
     <script defer src="../js/menu.js"></script>
     <script defer src="../js/inrun.js"></script>
 </head>
 <body>
-    <header id="header">
-        <nav>
-            <ul class="nav">
-                <li><a href="../index.html" class="menu">ABOUT HIM</a></li>
-                <li><a href="trophies.html" class="menu">TROPHIES</a></li>
-                <li><a href="tournaments.html" class="menu">TOURNAMENTS</a></li>
-                <li><a href="table.html" class="menu">TABLE STATS</a></li>
-                <li><a href="inrun.html" class="menu">IN RUN</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <form class="queue-web" id="queue-web">
-            <div class="queue-row">
-                <label class="my-label" for="name">Match:</label>
-                <input required type="text" id="name" name="Match" />
-            </div>
-            <div class="queue-row">
-                <label class="my-label" for="surname">Map:</label>
-                <input required type="text" id="surname" name="Map" />
-            </div>
-            <div class="queue-row">
-                <label class="my-label" for="group">KDR:</label>
-                <input required type="number" id="group" name="KDR" />
-            </div>
-            <div class="queue-row">
-                <label class="my-label" for="labs">Rating 2.0:</label>
-                <input required type="number" id="labs" name="Rating" />
-            </div>
-            <div class="queue-row">
-                <button type="button" class="queue-button" id="queue-btn">Add</button>
-                <button type="button" class="queue-button" id="clear-btn">Delete All</button>
-                <button type="button" class="queue-button" id="add-api-btn">Real Stats</button>
-            </div>
-        </form>
+<header id="header">
+    <nav>
+        <ul class="nav">
+            <li><a href="../index.html" class="menu">ABOUT HIM</a></li>
+            <li><a href="trophies.html" class="menu">TROPHIES</a></li>
+            <li><a href="tournaments.html" class="menu">TOURNAMENTS</a></li>
+            <li><a href="table.html" class="menu">TABLE STATS</a></li>
+            <li><a href="inrun.html" class="menu">IN RUN</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form class="queue-web" id="queue-web">
+        <div class="queue-row">
+            <label class="my-label" for="name">Match:</label>
+            <input required type="text" id="name" name="Match" />
+        </div>
+        <div class="queue-row">
+            <label class="my-label" for="surname">Map:</label>
+            <input required type="text" id="surname" name="Map" />
+        </div>
+        <div class="queue-row">
+            <label class="my-label" for="group">KDR:</label>
+            <input required type="number" id="group" name="KDR" />
+        </div>
+        <div class="queue-row">
+            <label class="my-label" for="labs">Rating 2.0:</label>
+            <input required type="number" id="labs" name="Rating" />
+        </div>
+        <div class="queue-row">
+            <button type="button" class="queue-button" id="queue-btn">Add</button>
+            <button type="button" class="queue-button" id="clear-btn">Delete All</button>
+            <button type="button" class="queue-button" id="add-api-btn">Real Stats</button>
+        </div>
+    </form>
 
 
-        <div class="table-responsive">
-            <table id="queue-table">
-                <thead>
-                    <th>Match</th>
-                    <th>Map</th>
-                    <th>KDR</th>
-                    <th>Rating</th>
-                </thead>
-                <tbody>
-                <tr></tr>
-                </tbody>
-            </table>
-        </div>
-    </main>
-    <footer>
-        <div id="footnote">
-            <p id="load"></p>
-            <p id="sign ">Kvitkov Igor Designed <span class="highlight">©2021</span></p>
-        </div>
-    </footer>
+    <div class="table-responsive">
+        <table id="queue-table">
+            <thead>
+            <th>Match</th>
+            <th>Map</th>
+            <th>KDR</th>
+            <th>Rating</th>
+            </thead>
+            <tbody>
+            <tr></tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+<footer>
+    <div id="footnote">
+        <p id="load"></p>
+        <p id="sign ">Kvitkov Igor Designed <span class="highlight">©2021</span></p>
+    </div>
+</footer>
 </body>
 </html>

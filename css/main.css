@@ -58,7 +58,7 @@ body
     background-color: #2C2F33;
 }
 ul.nav li {
-    font-family: Navigation, "Times New Roman";
+    font-family: Navigation,  monospace;;
     list-style-type: none;
     flex-basis: auto;
     font-weight: bolder;
@@ -96,7 +96,7 @@ footer {
 }
 
 ul.nav li {
-    font-family: Navigation, "Times New Roman";
+    font-family: Navigation, monospace;
     list-style-type: none;
     flex-basis: auto;
     font-weight: bolder;
@@ -125,5 +125,5 @@ div#footnote {
     margin: 0 auto;
 }
 section.graph {
-    font-family: Source;
+    font-family: Source, monospace;
 }

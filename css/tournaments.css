@@ -30,7 +30,7 @@ body
     background-color: #2C2F33;
 }
 ul.nav li {
-    font-family: Navigation, "Times New Roman";
+    font-family: Navigation, monospace;
     list-style-type: none;
     flex-basis: auto;
     font-weight: bolder;
@@ -49,7 +49,7 @@ section {
     padding-top: 100px;
     color: #FFFFFF;
     list-style-type: none;
-    font-family: Source;
+    font-family: Source, monospace;
     text-align: center;
     margin: auto;
 }
