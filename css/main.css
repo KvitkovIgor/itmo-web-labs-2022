@@ -127,3 +127,31 @@ div#footnote {
 section.graph {
     font-family: Source, monospace;
 }
+
+wrapper-item {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.photo {
+    display: flex;
+    margin-right: 10px;
+}
+
+.photo:last-child {
+    margin-right: 0;
+}
